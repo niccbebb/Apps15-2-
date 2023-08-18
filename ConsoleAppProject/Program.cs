@@ -33,7 +33,12 @@ namespace ConsoleAppProject
             {
                 case 1:
                     DistanceConverter app01 = new DistanceConverter();
-                    app01.Run(); break;
+                    app01.Run();break;
+               /// case 3:
+                 ///  StudentGrades grades = new StudentGrades();
+                    ///grades.Run(); break;
+
+               /// case 4: NewsApp app04 = new NewsApp(); app04.Run(); break;
             }
         }
     }
