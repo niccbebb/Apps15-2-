@@ -173,9 +173,10 @@ namespace ConsoleAppProject.App02
                 + "you to the menu (y/n) > ");
         }
 
-        internal void Run()
+        public void Run()
         {
-            throw new NotImplementedException();
+            ConsoleHelper.OutputHeading("BMI Calculator");
+            ConvertBMI();
         }
     }
 }

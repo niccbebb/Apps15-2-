@@ -16,6 +16,7 @@ namespace ConsoleAppProject
     /// </summary>
     public static class Program
     {
+        public static int choice;
         public static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -26,25 +27,24 @@ namespace ConsoleAppProject
             Console.WriteLine(" =================================================");
             Console.WriteLine();
 
-            string[] choices = { "App01", "App02", "App03", "App04" };
-
-            int choice = ConsoleHelper.SelectChoice(choices);
-
-            switch (choice)
+            string[] choices = new string[]
             {
-                case 1:
-                    DistanceConverter app01 = new DistanceConverter();
-                    app01.Run();break;
+                "1. Distance Converter",
+                "2. BMI Calculator"
+            };
 
-                case 2:
-                    BMICalculator app02 = new BMICalculator();
-                    app02.Run();break;
+            ConsoleHelper.OutputTitle("Please select the application you wish to use");
+            choice = ConsoleHelper.SelectChoice(choices);
 
-               /// case 3:
-                 ///  StudentGrades grades = new StudentGrades();
-                    ///grades.Run(); break;
+            if (choice == 1)
+            {
+                DistanceConverter converter = new DistanceConverter();
 
-               /// case 4: NewsApp app04 = new NewsApp(); app04.Run(); break;
+            }
+            else if (choice == 2)
+            {
+                BMICalculator = new BMICalculator();
+                BMICalculator.Run();
             }
         }
     }
