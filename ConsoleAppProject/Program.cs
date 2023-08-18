@@ -1,4 +1,5 @@
 ﻿using ConsoleAppProject.App01;
+using ConsoleAppProject.App02;
 using ConsoleAppProject.App03;
 using ConsoleAppProject.Helpers;
 using System;
@@ -34,6 +35,11 @@ namespace ConsoleAppProject
                 case 1:
                     DistanceConverter app01 = new DistanceConverter();
                     app01.Run();break;
+
+                case 2:
+                    BMICalculator app02 = new BMICalculator();
+                    app02.Run();break;
+
                /// case 3:
                  ///  StudentGrades grades = new StudentGrades();
                     ///grades.Run(); break;

@@ -172,5 +172,10 @@ namespace ConsoleAppProject.App02
             Console.Write("\n\tWould you like to exit? Selecting 'b' will return "
                 + "you to the menu (y/n) > ");
         }
+
+        internal void Run()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
