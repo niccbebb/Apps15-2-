@@ -25,8 +25,16 @@ namespace ConsoleAppProject
             Console.WriteLine(" =================================================");
             Console.WriteLine();
 
-            DistanceConverter converter = new DistanceConverter();
-            //converter.run();
+            string[] choices = { "App01", "App02", "App03", "App04" };
+
+            int choice = ConsoleHelper.SelectChoice(choices);
+
+            switch (choice)
+            {
+                case 1:
+                    DistanceConverter app01 = new DistanceConverter();
+                    app01.Run(); break;
+            }
         }
     }
 }
