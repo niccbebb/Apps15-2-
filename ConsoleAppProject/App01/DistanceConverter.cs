@@ -105,7 +105,11 @@ namespace ConsoleAppProject.App01
             {
                 toDistance = fromDistance * METRES_IN_MILES;
             }
-
+            else if (fromUnit == DistanceUnits.Miles &&
+               toUnit == DistanceUnits.Metres)
+            {
+                toDistance = fromDistance * METRES_IN_MILES;
+            }
         }
 
         private double InputDistance(string prompt)
