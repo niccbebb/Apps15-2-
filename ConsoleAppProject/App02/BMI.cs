@@ -176,7 +176,7 @@ namespace ConsoleAppProject.App02
         public void Run()
         {
             ConsoleHelper.OutputHeading("BMI Calculator");
-            ConvertBMI();
+            OutputBMI();
         }
     }
 }
